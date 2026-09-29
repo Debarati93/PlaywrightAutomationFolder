@@ -7,7 +7,7 @@ const {test,expect} = require('@playwright/test');
 //fixtures are global variables which are available for all the tests accross your project.
 //browser fixture:: this fixture is globally available for each and every project.This fixture is required to invoke the browser.
 //context fixture::
-test.only('First Playwright test',async ({browser})=>
+test('First Playwright test',async ({browser})=>
 {
     
     const context =await browser.newContext();

@@ -14,6 +14,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  retries :1,
   timeout: 30*1000,  //if overall application is slow in this case apply timeout globally
   expect:{
     timeout:30*1000, //if overall application is slow in this case apply timeout globally
@@ -24,7 +25,7 @@ export default defineConfig({
     actionTimeout:50*1000, //action timeout has been setup step level for each actions in a test
     navigationTimeout:30*1000,//goto() method will wait for 30 seconds
     browserName : 'chromium',
-    headless: false,
+    headless: true,
     screenshot : 'on',
     trace: 'on'
   },

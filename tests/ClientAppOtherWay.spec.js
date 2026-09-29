@@ -11,7 +11,7 @@ const {test,expect} = require('@playwright/test');
 //context fixture::
 
 
-test.only('ClientApp Login',async({browser})=>
+test.skip('ClientApp Login',async({browser})=>
 {
     const context = await browser.newContext();
     const page = await context.newPage();

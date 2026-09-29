@@ -1,5 +1,5 @@
 const {test ,expect,request} = require('@playwright/test');
-const {APIUtils} = require('./utils/APIUtils');
+const {APIUtils} = require('../utils/APIUtils');
 
 
 const loginPayLoad = {userEmail: "dey.debarati066@gmail.com", userPassword: "Welcome@123"};
@@ -21,7 +21,7 @@ test.beforeEach(()=>
 }); //will execute before each tests 
 
 
-test('Place the order',async({page})=>
+test('@API Place the order',async({page})=>
 {
     
     await page.addInitScript(value=>{

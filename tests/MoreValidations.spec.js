@@ -1,7 +1,9 @@
 const {test,expect} = require('@playwright/test');
 
+test.describe.configure({mode:'parallel'});
+//test.describe.configure({mode:'serial'});//if the tests are interdependent on each other then use this serial mode so that if one test fail then the rest of the others will not get executed.
 
-test("More Validations",async({page})=>
+test("@Web More Validations",async({page})=>
 {
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     // await page.goto("http://google.com");
@@ -22,7 +24,7 @@ test("More Validations",async({page})=>
 
 });
 
-test("Screenshot & Visual comparison",async({page})=>
+test("@Web Screenshot & Visual comparison",async({page})=>
 {
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     // await page.goto("http://google.com");
@@ -39,7 +41,7 @@ test("Screenshot & Visual comparison",async({page})=>
 
 //Visual Testing
 
-test.only("Visual testing",async({page})=>
+test("@Web Visual testing",async({page})=>
     {
 
         await page.goto("https://www.flightaware.com/");

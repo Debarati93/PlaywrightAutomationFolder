@@ -120,7 +120,7 @@ test('UI Controls',async({page})=>
 
 })
 
-test.only('Handle windows',async({browser})=>
+test('Handle windows',async({browser})=>
 {
     const context = await browser.newContext();
     const page = await context.newPage();

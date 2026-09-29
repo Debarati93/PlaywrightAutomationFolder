@@ -20,7 +20,7 @@ test.beforeAll(async({browser})=>
     WebContext = await browser.newContext({storageState:'state.json'});
 })
 
-test('ClientApp Login',async({})=>
+test('@API ClientApp Login',async({})=>
 {
     const page = await WebContext.newPage();
     await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
@@ -88,7 +88,7 @@ test('ClientApp Login',async({})=>
     await page.pause();
 })
 
-test("Second Test",async()=>
+test("@API Second Test",async()=>
 {
     const page = await WebContext.newPage();
     await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
