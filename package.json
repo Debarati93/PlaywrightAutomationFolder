@@ -8,13 +8,15 @@
     "webTests": "npx playwright test --grep @Web --reporter=line,allure-playwright",
     "apitests": "npx playwright test --grep @API --reporter=line,allure-playwright",
     "SafariNewConfig": "npx playwright test --config=playwright.config1.js --project=Safari",
-     "CucumberRegression" : "npx cucumber-js --tags @Regression --retry 1  --exit --format html:cucumber-report.html"
+    "CucumberRegression": "npx cucumber-js --tags @Regression --retry 1  --exit --format html:cucumber-report.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@azure/identity": "^4.14.0",
+    "@azure/playwright": "^1.1.6",
     "@cucumber/cucumber": "^13.3.0",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
