@@ -23,7 +23,7 @@ test("@Web More Validations",async({page})=>
 
 
 });
-
+//calender test changes in the future so we will not do any validation on it.
 test("@Web Screenshot & Visual comparison",async({page})=>
 {
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
